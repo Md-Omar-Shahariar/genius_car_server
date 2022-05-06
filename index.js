@@ -114,6 +114,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Running");
 });
+app.get("/hero", (req, res) => {
+  res.send("Running HERO");
+});
 
 app.listen(port, () => {
   console.log("listening", port);
